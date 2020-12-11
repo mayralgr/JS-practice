@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mayralgr/JS-practice/issues"
   },
-  "homepage": "https://github.com/mayralgr/JS-practice#readme"
+  "homepage": "https://github.com/mayralgr/JS-practice#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "json-server": "^0.16.3"
+  }
 }
