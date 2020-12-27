@@ -1,0 +1,10 @@
+const numeros = [10,20,30,40, [1,2,3]];
+console.log(numeros);
+console.table(numeros);
+
+// Acceder al arreglo
+console.log(numeros[2]);
+console.log(numeros[3]);
+console.log(numeros[4]);
+
+console.log(numeros[4][1]);
