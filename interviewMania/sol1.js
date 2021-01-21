@@ -8,10 +8,6 @@ What if the inputs contain unicode characters? How would you adapt your solution
 
 */
 
-
-/**
- *  Complexity O(n log n) --> sorting O( log n ), comparing O(n)
- */
 /**
  * @param {string} s
  * @param {string} t
@@ -40,7 +36,12 @@ function isAnagram(s, t) {
     return true;
 }
 
+
 // using and sorting arrays
+
+/**
+ *  Complexity O(n log n) --> sorting O( log n ), comparing O(n)
+ */
 function isAnagram (s, t) {
     let anagram = true;
     if ( s.length !== t.length ) {
