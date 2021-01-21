@@ -64,19 +64,19 @@ function isAnagram (s, t) {
 
 // using hashmaps for unicode and any symbol complesty O(n) +++ faster
 function isAnagram( s, t) {
-    let smap        =new Map();
-    let slength     =s.length;
-    let tlength     =t.length;
+    let charMap     = new Map();
+    let slength     = s.length;
+    let tlength     = t.length;
     if( slength !== tlength) {
         return false;
     }
-    for( let i=0 ; i<slength ; i++){
-        smap.set(s.charAt(i), (smap.get(s[i]) || 0) +1);
-        smap.set(t.charAt(i), (smap.get(t[i]) || 0) -1);
+    for( let i=0 ; i < slength ; i++){
+        charMap.set(s.charAt(i), (charMap.get(s[i]) || 0) +1);
+        charMap.set(t.charAt(i), (charMap.get(t[i]) || 0) -1);
     }
     let isAnagram = true;
-    smap.forEach((value) => {
-        if ( value !== 0 ) {
+    charMap.forEach((countOfChar) => {
+        if ( countOfChar !== 0 ) {
             isAnagram = false;
             return;
         }
